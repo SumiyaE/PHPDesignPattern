@@ -4,7 +4,7 @@ services:
     php:
         build: ./ # 構築時のオプションを指定、今回はDockerfileの場所
         volumes:
-            - ./src:/var/www/html
+            - ./:/var/www/html
         ports:
             - 8000:80
         container_name: php8.1-trial2
