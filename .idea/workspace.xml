@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec47bbfe-f4ef-47a3-8c0a-b0227ae44bf6" name="変更" comment="やり直し" />
+    <list default="true" id="ec47bbfe-f4ef-47a3-8c0a-b0227ae44bf6" name="変更" comment=".idea以下のファイルをcommit">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -152,7 +155,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720230807174</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary=".idea以下のファイルをcommit">
+      <option name="closed" value="true" />
+      <created>1720248019647</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1720248019647</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,7 +172,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="docker関連のファイルを作成" />
     <MESSAGE value="やり直し" />
-    <option name="LAST_COMMIT_MESSAGE" value="やり直し" />
+    <MESSAGE value=".idea以下のファイルをcommit" />
+    <option name="LAST_COMMIT_MESSAGE" value=".idea以下のファイルをcommit" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
