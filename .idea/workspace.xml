@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec47bbfe-f4ef-47a3-8c0a-b0227ae44bf6" name="変更" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/PHPDesignPattern.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/UnitTestPractice.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/phpunit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/makefile" afterDir="false" />
-    </list>
+    <list default="true" id="ec47bbfe-f4ef-47a3-8c0a-b0227ae44bf6" name="変更" comment="docker関連のファイルを作成" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -145,12 +134,25 @@
       <workItem from="1720229433297" duration="10000" />
       <workItem from="1720229445159" duration="41000" />
       <workItem from="1720229487343" duration="22000" />
-      <workItem from="1720229515753" duration="149000" />
+      <workItem from="1720229515753" duration="458000" />
     </task>
+    <task id="LOCAL-00001" summary="docker関連のファイルを作成">
+      <option name="closed" value="true" />
+      <created>1720229786765</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1720229786765</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="docker関連のファイルを作成" />
+    <option name="LAST_COMMIT_MESSAGE" value="docker関連のファイルを作成" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
