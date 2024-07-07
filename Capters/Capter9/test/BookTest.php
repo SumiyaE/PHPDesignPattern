@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__ . '/../../../vendor/autoload.php';
 
-use Capters\Capter9\src\Book;
+use Capters\Capter9\src\SelfMade\Book;
 use PHPUnit\Framework\TestCase;
 
 class BookTest extends TestCase

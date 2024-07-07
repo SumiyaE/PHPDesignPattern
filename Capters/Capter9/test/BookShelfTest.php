@@ -1,8 +1,8 @@
 <?php
 require_once __DIR__ . '/../../../vendor/autoload.php';
 
-use Capters\Capter9\src\Book;
-use Capters\Capter9\src\BookShelf;
+use Capters\Capter9\src\SelfMade\Book;
+use Capters\Capter9\src\SelfMade\BookShelf;
 use PHPUnit\Framework\TestCase;
 
 class BookShelfTest extends TestCase

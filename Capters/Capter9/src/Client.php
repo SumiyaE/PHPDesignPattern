@@ -1,6 +1,10 @@
 <?php
 
 namespace Capters\Capter9\src;
+
+use Capters\Capter9\src\SelfMade\Book;
+use Capters\Capter9\src\SelfMade\BookShelf;
+
 require_once __DIR__ . '/../../../vendor/autoload.php';
 
 function main(): void

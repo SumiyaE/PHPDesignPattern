@@ -1,8 +1,8 @@
 <?php
 
-namespace Capters\Capter9\src;
+namespace Capters\Capter9\src\SelfMade;
 
-use Capters\Capter9\src\Interfaces\IteratorInterface;
+use Capters\Capter9\src\SelfMade\Interfaces\IteratorInterface;
 
 class BookShelfIterator implements IteratorInterface
 {

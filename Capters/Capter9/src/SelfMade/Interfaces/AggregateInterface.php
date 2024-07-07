@@ -1,6 +1,6 @@
 <?php
 
-namespace Capters\Capter9\src\Interfaces;
+namespace Capters\Capter9\src\SelfMade\Interfaces;
 
 interface AggregateInterface
 {
