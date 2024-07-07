@@ -36,24 +36,3 @@ class BookShelf implements AggregateInterface
     return new BookShelfIterator($this);
   }
 }
-
-function main()
-{
-  $bookShelf = new BookShelf();
-  $bookShelf->appendBook(new Book('book-A'));
-  $bookShelf->appendBook(new Book('book-B'));
-  $bookShelf->appendBook(new Book('book-C'));
-  $bookShelf->appendBook(new Book('book-D'));
-
-  $iterator = $bookShelf->iterator();
-  while ($iterator->hasNext()) {
-    echo $iterator->next()->getName() . "\n";
-  }
-
-  $books = $bookShelf->getBooks();
-  for ($i = 0; $i < count($books); $i++) {
-    echo $books[$i]->getName() . "\n";
-  }
-}
-
-main();
