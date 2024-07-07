@@ -1,6 +1,6 @@
 <?php
 
-namespace Capters\Capter9\src\WithSPL;
+namespace Capters\Capter9\src\Composite;
 
 require_once __DIR__ . '/../../../../vendor/autoload.php';
 

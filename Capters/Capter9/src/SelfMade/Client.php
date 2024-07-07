@@ -1,9 +1,6 @@
 <?php
 
-namespace Capters\Capter9\src;
-
-use Capters\Capter9\src\SelfMade\MenuItem;
-use Capters\Capter9\src\SelfMade\Menu;
+namespace Capters\Capter9\src\SelfMade;
 
 require_once __DIR__ . '/../../../../vendor/autoload.php';
 
