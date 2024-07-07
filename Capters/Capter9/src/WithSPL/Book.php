@@ -1,6 +1,6 @@
 <?php
 
-namespace Capters\Capter9\src\SelfMade;
+namespace Capters\Capter9\src\WithSPL;
 
 class Book
 {
