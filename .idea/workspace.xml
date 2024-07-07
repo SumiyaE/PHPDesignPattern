@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec47bbfe-f4ef-47a3-8c0a-b0227ae44bf6" name="変更" comment="testを作成">
-      <change afterPath="$PROJECT_DIR$/Capters/Capter9/src/Client.php" afterDir="false" />
+    <list default="true" id="ec47bbfe-f4ef-47a3-8c0a-b0227ae44bf6" name="変更" comment="client側の実装を作成">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Capters/Capter9/src/BookShelf.php" beforeDir="false" afterPath="$PROJECT_DIR$/Capters/Capter9/src/BookShelf.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Capters/Capter9/src/BookShelfIterator.php" beforeDir="false" afterPath="$PROJECT_DIR$/Capters/Capter9/src/BookShelfIterator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Capters/Capter9/src/Client.php" beforeDir="false" afterPath="$PROJECT_DIR$/Capters/Capter9/src/Client.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +173,7 @@
       <workItem from="1720248791132" duration="810000" />
       <workItem from="1720249652654" duration="1387000" />
       <workItem from="1720251044322" duration="4152000" />
-      <workItem from="1720357501169" duration="680000" />
+      <workItem from="1720357501169" duration="2183000" />
     </task>
     <task id="LOCAL-00001" summary="docker関連のファイルを作成">
       <option name="closed" value="true" />
@@ -231,7 +231,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720357662685</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="client側の実装を作成">
+      <option name="closed" value="true" />
+      <created>1720358247034</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1720358247034</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,7 +252,8 @@
     <MESSAGE value="phpunitをinstall" />
     <MESSAGE value="composerを更新" />
     <MESSAGE value="testを作成" />
-    <option name="LAST_COMMIT_MESSAGE" value="testを作成" />
+    <MESSAGE value="client側の実装を作成" />
+    <option name="LAST_COMMIT_MESSAGE" value="client側の実装を作成" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
