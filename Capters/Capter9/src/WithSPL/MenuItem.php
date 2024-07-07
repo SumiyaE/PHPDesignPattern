@@ -2,7 +2,7 @@
 
 namespace Capters\Capter9\src\WithSPL;
 
-class Book
+class MenuItem
 {
   private readonly string $name;
   private readonly bool $isEnglish;
