@@ -37,13 +37,6 @@ function main(): void
   foreach ($iterator as $menuItem) {
     echo $menuItem->getName() . "\n";
   }
-
-  echo '---onlyEnglish---' . "\n";
-  $englishMenuIterator = $menu->getEnglishIterator();
-  foreach ($englishMenuIterator as $englishMenuItem) {
-    echo $englishMenuItem->getName() . "\n";
-  }
-
 }
 
 main();

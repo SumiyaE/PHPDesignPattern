@@ -35,5 +35,5 @@ abstract class MenuComponent
    * メニューを表示する
    * サンプルでは、デフォルトの実装を用意
    */
-  public abstract function dump(): void;
+  public abstract function echo(): void;
 }

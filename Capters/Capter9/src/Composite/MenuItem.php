@@ -40,7 +40,7 @@ class MenuItem extends MenuComponent
     throw new BadMethodCallException("MenuItemクラスには子要素を追加できません");
   }
 
-  public function dump(): void
+  public function echo(): void
   {
     echo "    ".$this->getName().":" . $this->getDescription() ."\n";
     echo "    price:".$this->getPrice() . "円\n";

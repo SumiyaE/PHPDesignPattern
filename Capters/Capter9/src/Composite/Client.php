@@ -7,10 +7,10 @@ require_once __DIR__ . '/../../../../vendor/autoload.php';
 function main(): void
 {
   // 全てのメニューの親となるComponent
-  $allMenus = new MenuComposite('all menus', 'this is all menus');
+  $allMenus = new Menu('all menus', 'this is all menus');
 
   // メインディッシュのメニュー
-  $mainMenu = new MenuComposite('main dish', 'this is main');
+  $mainMenu = new Menu('main dish', 'this is main');
 
   // メインディッシュにメニューを追加
   $mainMenu->add(new MenuItem('menu-A', 'this menu is menu-A', 100, true));
@@ -21,7 +21,7 @@ function main(): void
   $mainMenu->add(new MenuItem('menu-F', 'this menu is menu-F', 600, false));
 
   // デザートのメニュー
-  $dessertMenu = new MenuComposite('dessert', 'this is dessert');
+  $dessertMenu = new Menu('dessert', 'this is dessert');
 
   // デザートにメニューを追加
   $dessertMenu->add(new MenuItem('menu-G', 'this menu is menu-G', 700, true));
@@ -35,7 +35,9 @@ function main(): void
   $allMenus->add($dessertMenu);
 
 
-  $allMenus->dump();
+  $allMenus->echo();
+
+  $onlyEnglish = new EnglishMenuFilter($allMenus->getIterator());
 }
 
 main();

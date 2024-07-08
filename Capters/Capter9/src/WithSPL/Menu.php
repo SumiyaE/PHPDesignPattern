@@ -26,9 +26,4 @@ class Menu implements IteratorAggregate
   {
     return new ArrayIterator($this->menuItems);
   }
-
-  public function getEnglishIterator(): Traversable
-  {
-    return new EnglishMenuFilter($this->getIterator());
-  }
 }

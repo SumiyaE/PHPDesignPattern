@@ -1,25 +1,18 @@
 <?php
 
 namespace Capters\Capter9\src\Composite;
-
-
 use IteratorAggregate;
-use ArrayIterator;
 use Traversable;
+use ArrayIterator;
 
-class Menu implements IteratorAggregate
+class Menu extends MenuComponent implements IteratorAggregate
 {
-  /** @var MenuItem[] */
   private array $menuItems;
 
-  public function appendMenuItem(MenuItem $book): void
+  public function __construct(string $name, string $description)
   {
-    $this->menuItems[] = $book;
-  }
-
-  public function getMenuItems(): array
-  {
-    return $this->menuItems;
+    parent::__construct($name, $description);
+    $this->menuItems = [];
   }
 
   public function getIterator() : Traversable
@@ -27,8 +20,28 @@ class Menu implements IteratorAggregate
     return new ArrayIterator($this->menuItems);
   }
 
-  public function getEnglishIterator(): Traversable
+  public function getName(): string
   {
-    return new EnglishMenuFilter($this->getIterator());
+    return $this->name;
+  }
+
+  public function getDescription(): string
+  {
+    return $this->description;
+  }
+
+  public function add(MenuComponent $menuComponent): void
+  {
+    $this->menuItems[] = $menuComponent;
+  }
+
+  public function echo(): void
+  {
+    echo "============================\n";
+    echo "【".$this->getName().":" . $this->getDescription() ."】\n";
+    foreach ($this as $entry) {
+      $entry->echo();
+    }
+    echo "============================\n";
   }
 }
