@@ -6,6 +6,7 @@ namespace Capters\Capter9\src\SelfMade;
 use Capters\Capter9\src\SelfMade\Interfaces\AggregateInterface;
 use Capters\Capter9\src\SelfMade\Interfaces\IteratorInterface;
 
+// ConcreteAggregateに相当する
 class Menu implements AggregateInterface
 {
   /** @var MenuItem[] */

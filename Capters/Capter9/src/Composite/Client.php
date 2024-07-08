@@ -34,7 +34,7 @@ function main(): void
   $allMenus->add($mainMenu);
   $allMenus->add($dessertMenu);
 
-  // 全てのメニューを表示
+
   $allMenus->dump();
 }
 

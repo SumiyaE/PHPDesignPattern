@@ -4,6 +4,7 @@ namespace Capters\Capter9\src\SelfMade;
 
 use Capters\Capter9\src\SelfMade\Interfaces\IteratorInterface;
 
+// ConcreteIteratorに相当する
 class MenuIterator implements IteratorInterface
 {
   private Menu $menu;
