@@ -36,8 +36,6 @@ function main(): void
 
 
   $allMenus->echo();
-
-  $onlyEnglish = new EnglishMenuFilter($allMenus->getIterator());
 }
 
 main();
