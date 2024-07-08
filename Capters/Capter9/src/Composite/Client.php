@@ -6,44 +6,36 @@ require_once __DIR__ . '/../../../../vendor/autoload.php';
 
 function main(): void
 {
-  $menu = new Menu();
-  $menu->appendMenuItem(new MenuItem('menu-A'));
-  $menu->appendMenuItem(new MenuItem('menu-B'));
-  $menu->appendMenuItem(new MenuItem('menu-C'));
-  $menu->appendMenuItem(new MenuItem('menu-D'));
-  $menu->appendMenuItem(new MenuItem('menu-E', false));
-  $menu->appendMenuItem(new MenuItem('menu-F', false));
+  // 全てのメニューの親となるComponent
+  $allMenus = new MenuComposite('all menus', 'this is all menus');
 
-  // for文へのアクセス方法をクライアントが知っている
-  // booksの内部構造が変わる場合、たとえば連想配列に変更した場合、クライアントも更する必要がある
-  // booksの列挙方法が変わる場合、たとえば逆順で取得したい場合、クライアントも変更する必要がある
-  $menuItems = $menu->getMenuItems();
-  for ($i = 0; $i < count($menuItems); $i++) {
-    echo $menuItems[$i]->getName() . "\n";
-  }
+  // メインディッシュのメニュー
+  $mainMenu = new MenuComposite('main dish', 'this is main');
 
-//  $iterator = $menu->getIterator();
-//  while ($iterator->hasNext()) {
-//    echo $iterator->next()->getName() . "\n";
-//  }
-  echo '---' . "\n";
-  // BookShelfをforeachで回すことで、Bookshelf内部のiteratorにアクセスすることができる
-  foreach ($menu as $menuItem) {
-    echo $menuItem->getName() . "\n";
-  }
+  // メインディッシュにメニューを追加
+  $mainMenu->add(new MenuItem('menu-A', 'this menu is menu-A', 100, true));
+  $mainMenu->add(new MenuItem('menu-B', 'this menu is menu-B', 200, false));
+  $mainMenu->add(new MenuItem('menu-C', 'this menu is menu-C', 300, true));
+  $mainMenu->add(new MenuItem('menu-D', 'this menu is menu-D', 400, false));
+  $mainMenu->add(new MenuItem('menu-E', 'this menu is menu-E', 500, true));
+  $mainMenu->add(new MenuItem('menu-F', 'this menu is menu-F', 600, false));
 
-  echo '---' . "\n";
-  $iterator = $menu->getIterator();
-  foreach ($iterator as $menuItem) {
-    echo $menuItem->getName() . "\n";
-  }
+  // デザートのメニュー
+  $dessertMenu = new MenuComposite('dessert', 'this is dessert');
 
-  echo '---onlyEnglish---' . "\n";
-  $englishMenuIterator = $menu->getEnglishIterator();
-  foreach ($englishMenuIterator as $englishMenuItem) {
-    echo $englishMenuItem->getName() . "\n";
-  }
+  // デザートにメニューを追加
+  $dessertMenu->add(new MenuItem('menu-G', 'this menu is menu-G', 700, true));
+  $dessertMenu->add(new MenuItem('menu-H', 'this menu is menu-H', 800, false));
+  $dessertMenu->add(new MenuItem('menu-I', 'this menu is menu-I', 900, true));
+  $dessertMenu->add(new MenuItem('menu-J', 'this menu is menu-J', 1000, false));
 
+
+  // メインディッシュとデザートを全てのメニューに追加
+  $allMenus->add($mainMenu);
+  $allMenus->add($dessertMenu);
+
+  // 全てのメニューを表示
+  $allMenus->dump();
 }
 
 main();

@@ -1,15 +1,17 @@
 <?php
 
 namespace Capters\Capter9\src\Composite;
+use BadMethodCallException;
 
-class MenuItem
+class MenuItem extends MenuComponent
 {
-  private readonly string $name;
+  private readonly int $price;
   private readonly bool $isEnglish;
 
-  public function __construct(string $name, bool $isEnglish = true)
+  public function __construct(string $name, string $description,  int $price,bool $isEnglish)
   {
-    $this->name = $name;
+    parent::__construct($name, $description);
+    $this->price = $price;
     $this->isEnglish = $isEnglish;
   }
 
@@ -18,9 +20,30 @@ class MenuItem
     return $this->name;
   }
 
+  public function getDescription(): string
+  {
+    return $this->description;
+  }
+
   public function isEnglish(): string
   {
     return $this->isEnglish;
   }
 
+  public function getPrice(): int
+  {
+    return $this->price;
+  }
+
+  public function add(MenuComponent $menuComponent)
+  {
+    throw new BadMethodCallException("MenuItemクラスには子要素を追加できません");
+  }
+
+  public function dump(): void
+  {
+    echo "    ".$this->getName().":" . $this->getDescription() ."\n";
+    echo "    price:".$this->getPrice() . "円\n";
+    echo "    ----------------\n";
+  }
 }
